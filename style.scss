@@ -1,0 +1,90 @@
+$btn-sugnup-border: #FFFFFF;
+$btn-signup-color1-start: #82BBDF;
+$btn-signup-color1-end: #679ABB;
+$btn-signup-color2-start: #FFA765;
+$btn-signup-color2-end: #FF6F03;
+$btn-signup-color-text: #FFF;
+$btn-signup-size: 48px;
+$btn-signup-radius: 8px;
+
+.btn-signup
+ {
+  display: flex;
+  width: 100%;
+  height: $btn-signup-size + 2px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px
+  border-radius: $btn-signup-radius;
+  border: 1px solid $btn-sugnup-border;
+  color: $btn-signup-color-text;
+  cursor: pointer;
+  min-width: 380px;
+  max-width: 500px;
+  
+  > span {
+    flex-shrink: 0;
+    height: $btn-signup-size;
+    padding-left: $btn-signup-size;
+    display: flex;
+    align-items: center;
+  }
+
+  > span:first-child {
+    flex-grow: 1;
+    text-align: left;
+    border-top-left-radius: $btn-signup-radius;
+    border-bottom-left-radius: $btn-signup-radius;
+    background: linear-gradient(to bottom, $btn-signup-color1-start, $btn-signup-color1-end);
+  }
+  
+  > span:last-child {
+    text-align: center;
+    padding-right: 15px;
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: $btn-signup-radius;
+    border-bottom-right-radius: $btn-signup-radius;
+    background: linear-gradient(to bottom, $btn-signup-color2-start, $btn-signup-color2-end);
+    
+    > i {
+      position: absolute;
+      left: (($btn-signup-size + 2) / -2);
+      top: -1px;
+      width: $btn-signup-size + 2;
+      height: $btn-signup-size + 2;
+      box-sizing: border-box;
+      border: 1px solid $btn-sugnup-border;
+      box-shadow: 0 0 0 1px $btn-sugnup-border;
+      transform: rotate(-45deg);
+      overflow: hidden;
+      
+      &::before {
+        content: '';
+        display: block;
+        width: 200%;
+        height: 100%;
+        margin-left: -50%;
+        transform: rotate(45deg);
+        background: linear-gradient(180deg, $btn-signup-color1-start, $btn-signup-color1-end) center;
+      }
+    }
+  }
+  
+  &:hover {
+    $btn-signup-color1-start: lighten($btn-signup-color1-start, 5%);
+    $btn-signup-color1-end: lighten($btn-signup-color1-end, 5%);
+    $btn-signup-color2-start: lighten($btn-signup-color2-start, 5%);
+    $btn-signup-color2-end: lighten($btn-signup-color2-end, 5%);
+
+    > span:first-child {
+      background: linear-gradient(to bottom, $btn-signup-color1-start, $btn-signup-color1-end);
+    }
+    > span:last-child {
+      background: linear-gradient(to bottom, $btn-signup-color2-start, $btn-signup-color2-end);
+      > i::before {
+        background: linear-gradient(180deg, $btn-signup-color1-start, $btn-signup-color1-end) center;
+      }
+    }
+  }
+}

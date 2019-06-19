@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>RealEstateWebsite</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.scss">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="header-top">
+				<div class="wrap">
+					<div id="logo-block">
+						<div class="logo"></div>
+						<div class="logo-content">
+							<h3>Realestate Company</h3>
+							<p class="logo-text">Lorem Ipsum is simply dummy text</p>
+						</div>
+						
+					</div>
+					<p class="contact-phone">Call us: (214) 227-7669</p>
+				</div>
+			</div>
+			                                       
+			<nav class="menu">
+				<div class="wrap">
+				  <div class="menuToggle">&#9776;</div>
+				  <ul class="menu-list">
+				    <li class="menu__item">
+				      <div class="menu__link-bg"></div>
+				      <a class="menu__link" href="#">Home</a>
+				    </li>
+				    <li class="menu__item">
+				      <div class="menu__link-bg"></div>
+				      <a class="menu__link" href="#">Our Story</a>
+				    </li>
+				    <li class="menu__item">
+				      <div class="menu__link-bg"></div>
+				      <a class="menu__link" href="#">Tenant</a>
+				    </li>
+				    <li class="menu__item">
+				      <div class="menu__link-bg"></div>
+				      <a class="menu__link" href="#">Owner</a>
+				    </li>
+				    <li class="menu__item">
+				      <div class="menu__link-bg"></div>
+				      <a class="menu__link" href="#">Contact us</a>
+				    </li>
+				  </ul>
+				  <a class="sign-link" href="#"> Sign in  /  Sign up</a>
+			 	</div>
+			</nav>                    
+			
+		</header>
+		<div class="listing_block">
+			<div class="wrap">
+				<div class="slider_block">
+					<div>
+						<img src="image/slider-img.png">
+						<h3>Lorem Ipsum is simply dummy text of</h3>
+						<p>We work with investors to make managing your investments easy!</p>
+					</div>
+					<div>
+						<img src="image/slider-img.png">
+						<h3>Lorem Ipsum is simply dummy text of</h3>
+						<p>We work with investors to make managing your investments easy!</p>
+					</div>
+					<div>
+						<img src="image/slider-img.png">
+						<h3>Lorem Ipsum is simply dummy text of</h3>
+						<p>We work with investors to make managing your investments easy!</p>
+					</div>
+					<div>
+						<img src="image/slider-img.png">
+						<h3>Lorem Ipsum is simply dummy text of</h3>
+						<p>We work with investors to make managing your investments easy!</p>
+					</div>
+					<div>
+						<img src="image/slider-img.png">
+						<h3>Lorem Ipsum is simply dummy text of</h3>
+						<p>We work with investors to make managing your investments easy!</p>
+					</div>
+				</div>
+				<div id="tabs" class="tab-content-block">
+					<ul class="tab-menu">
+						<li class="active">Tenants</li>
+						<li>Oweners</li>
+					</ul>
+					<div class="tab-content">
+						<div>
+							<form>
+								<table>
+									<tr>
+										<td colspan="2">
+											<label id="text_date" for="type_text">Address, Suburbs, Postcodes, or Regions</label><br>
+											
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<input type="text" name="" id="type_text" placeholder="Example: Wichita Falls, Texas 76301">
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<input type="checkbox" id="check_type" name="check_type" checked="checked">
+											<label id="check_text" for="check_type">Include surrounding suburbs</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label id="select_text" for="select_type">Property Type :</label>
+										</td>
+										<td>
+											<select  id="select_type">
+												<option>Select one</option>
+												<option>Select two</option>
+												<option>Select three</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label id="select_bedroom_text" for="select_bedroom_type">Bedrooms :</label>
+										</td>
+										<td>
+											<select  id="select_bedroom_type">
+												<option>Select one</option>
+												<option>Select two</option>
+												<option>Select three</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<button id="type_btn">Search</button>
+										</td>
+									</tr>
+								</table>
+								
+							</form>
+						</div>
+						<div>
+							<form>
+								<table>
+									<tr>
+										<td colspan="2">
+											<label id="text_date" for="type_text">Address, Suburbs, Postcodes, or Regions</label><br>
+											
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<input type="text" name="" id="type_text" placeholder="Example: Wichita Falls, Texas 76301">
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<input type="checkbox" id="check_type" name="check_type" checked="checked">
+											<label id="check_text" for="check_type">Include surrounding suburbs</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label id="select_text" for="select_type">Property Type :</label>
+										</td>
+										<td>
+											<select  id="select_type">
+												<option>Select one</option>
+												<option>Select two</option>
+												<option>Select three</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label id="select_bedroom_text" for="select_bedroom_type">Bedrooms :</label>
+										</td>
+										<td>
+											<select  id="select_bedroom_type">
+												<option>Select one</option>
+												<option>Select two</option>
+												<option>Select three</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<button id="type_btn">Search</button>
+										</td>
+									</tr>
+								</table>
+								
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="middle_block">
+			<div class="wrap">
+				<div class="row">
+					<div class="middle-item">
+						<table>
+							<tr>
+								<td>
+									<div class="element"></div>
+								</td>
+								<td>
+									<h3>Buy a home</h3>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+								</td>
+							</tr>
+						</table>
+										
+					</div>
+					<div class="middle-item">
+						<table>
+							<tr>
+								<td>
+									<div class="element"></div>
+								</td>
+								<td>
+									<h3>Sell a home</h3>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="middle-item">
+						<table>
+							<tr>
+								<td>
+									<div class="element"></div>
+								</td>
+								<td>
+									<h3>Rent a home</h3>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="img_list">
+			<div class="wrap">
+				<div class="row">
+					<div class="img_block">
+						<img src="image/image.png"  alt="">
+						<div class="img_block_text">
+							<div class="text">
+								<p>4605 Bayonne Court </p>
+								<p>Arlington, TX 76016</p>
+							</div>
+							<a href="#">
+								<div class="search-block"></div>
+							</a>
+								
+						</div>
+
+					</div>
+					<div class="img_block">
+						<img src="image/image.png">
+						<div class="img_block_text">
+							<div class="text">
+								<p>4605 Bayonne Court </p>
+								<p>Arlington, TX 76016</p>
+							</div>
+							<a href="#">
+								<div class="search-block"></div>
+							</a>	
+						</div>
+					</div>
+					<div class="img_block">
+						<img src="image/image.png">
+						<div class="img_block_text">
+							<div class="text">
+								<p>4605 Bayonne Court </p>
+								<p>Arlington, TX 76016</p>
+							</div>
+							<a href="#">
+								<div class="search-block"></div>
+							</a>				
+						</div>
+					</div>
+					<div class="img_block">
+						<img src="image/image.png">
+						<div class="img_block_text">
+							<div class="text">
+								<p>4605 Bayonne Court </p>
+								<p>Arlington, TX 76016</p>
+							</div>
+							<a href="#">
+								<div class="search-block"></div>
+							</a>			
+						</div>
+					</div>
+					<div class="img_block">
+						<img src="image/image.png">
+						<div class="img_block_text">
+							<div class="text">
+								<p>4605 Bayonne Court </p>
+								<p>Arlington, TX 76016</p>
+							</div>
+							<a href="#">
+								<div class="search-block"></div>
+							</a>				
+						</div>
+					</div>
+					<div class="img_block">
+						<img src="image/image.png">
+						<div class="img_block_text">
+							<div class="text">
+								<p>4605 Bayonne Court </p>
+								<p>Arlington, TX 76016</p>
+							</div>
+							<a href="#">
+								<div class="search-block"></div>
+							</a>			
+						</div>
+					</div>
+					<div class="img_block">
+						<img src="image/image.png">
+						<div class="img_block_text">
+							<div class="text">
+								<p>4605 Bayonne Court </p>
+								<p>Arlington, TX 76016</p>
+							</div>
+							<a href="#">
+								<div class="search-block"></div>
+							</a>				
+						</div>
+					</div>
+					<div class="img_block">
+						<img src="image/image.png">
+						<div class="img_block_text">
+							<div class="text">
+								<p>4605 Bayonne Court </p>
+								<p>Arlington, TX 76016</p>
+							</div>
+							<a href="#">
+								<div class="search-block"></div>
+							</a>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact-block">
+			<div class="wrap">
+				<div class="row">
+					<div class="registration-block">
+						<h3>Member login</h3>
+						<table>
+							<form method="post" action="">
+								<tr>
+									<td><input type="text" name="" id="user" placeholder="User name"></td>
+									<td><input type="password" name="" id="password" placeholder="Password"></td>
+									<td><button id="regist-btn">Login</button></td>
+								</tr>
+							</form>
+						</table>
+					</div>
+					<div class="subscribe-block">
+						<h2>Subscribe to our weekly newsletter</h2>
+						<table>
+							<tr>
+								<td><input type="text" name="" id="email" placeholder="email address"></td>
+								<td><button id="sub-btn">Subscribe</button></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="btn-signup">
+						<span>Not a member yet</span>
+						<span><i></i>Signup Now</span>
+					</div>
+					
+					<div class="social-block">
+						<ul>
+							<li class="social-facebook">
+								<a href="#" ">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li class="social-twiter">
+								<a href="#" >
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li class="plus-block">
+								<a href="#" >
+									<i class="fas fa-plus"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="wrap">
+				<div class="row">
+					<div class="about-block center">
+						
+						<ul>
+							<h4>About Us</h4>
+							<li>
+								<a href="#">About us</a>
+							</li>
+							<li>
+								<a href="#">Why us</a>
+							</li>
+							<li>
+								<a href="#">Customer Stories</a>
+							</li>
+							<li>
+								<a href="#">Press Resources</a>
+							</li>
+							<li>
+								<a href="#">Press Releases</a>
+							</li>
+							<li>
+								<a href="#">Contact us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="property-block center">
+						<ul>
+							<h4>Proparties</h4>
+							<li>
+								<a href="#">Rent a home</a>
+							</li>
+							<li>
+								<a href="#">Lease a home</a>
+							</li>
+							<li>
+								<a href="#">Buy a home</a>
+							</li>
+							<li>
+								<a href="#">Sell a home</a>
+							</li>
+							<li>
+								<a href="#">Ask advices</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-slider center">
+						<div>
+							<h4>Costamer Testimonials</h4>
+							<p class="main-text">Lorem Ipsum is simply dummy text of the printing and 
+							typesetting industry. Lorem Ipsum has been the industr
+							standard dummy text ever since the 1500s, 
+							when an unknown printer took a </p>
+							<p class="bold-text">Lorem Ipsum is simply
+							Owner, Lorem Ipsum</p>
+						</div>
+						<div>
+							<h4>Costamer Testimonials</h4>
+							<p class="main-text">Lorem Ipsum is simply dummy text of the printing and 
+							typesetting industry. Lorem Ipsum has been the industr
+							standard dummy text ever since the 1500s, 
+							when an unknown printer took a </p>
+							<p class="bold-text">Lorem Ipsum is simply
+							Owner, Lorem Ipsum</p>
+						</div>
+					</div>
+					<div class="footer-logo-block center">
+						<div class="footer-logo-content">
+							<div class="footer-logo"></div>
+							<h3>Realestate company</h3>
+							<p class="footer-logo-text">&copy; cssauthor.com</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+
+   
+    
+ 	<script src="js/script.js"></script>
+
+ 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/menu.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="js/slider.js"></script>
+    
+</body>
+</html>
