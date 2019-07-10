@@ -18,4 +18,5 @@ $(document).ready(function () {
 		getWrapper.find('.tab-content>div').fadeOut(250);
 		getWrapper.find('.tab-content>div[data-tab=' + dataTab + ']').fadeIn(250);
 	});
+
 });

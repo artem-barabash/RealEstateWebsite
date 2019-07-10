@@ -1043,4 +1043,14 @@ footer{
 	.next-btn{
 		right: 20px;
 	}
+	.registration-block h3{
+		margin-left: 10px;
+	}
+	.registration-block #user{
+		margin-left: 10px;
+		width: 80%;
+	}
+	.registration-block #password{
+		width: 70%;
+	}
 }
